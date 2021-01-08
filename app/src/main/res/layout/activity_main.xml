@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/colorBackground"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/trueCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Doğru: 0"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/falseCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trueCounter"
+        android:text="Yanlış: 0"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/cardBack"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:background="@color/colorFlashcard"
+        android:gravity="center_horizontal"
+        android:text="Back"
+        android:textAlignment="center"
+        android:textColor="@color/colorBackground"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/cardFront"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:background="@color/colorFlashcard"
+        android:gravity="center_horizontal"
+        android:text="Front"
+        android:textAlignment="center"
+        android:textColor="@color/colorBackground"
+        android:textSize="30sp" />
+
+
+    <EditText
+        android:id="@+id/textInput"
+        android:layout_width="190dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/cardBack"
+        android:layout_centerInParent="true"
+        android:hint="Kelimeyi gir"
+        android:imeOptions="actionSend"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textInput"
+        android:layout_marginTop="50sp"
+        android:layout_centerHorizontal="true"
+        android:text="Sonraki" />
+
+
+</RelativeLayout>

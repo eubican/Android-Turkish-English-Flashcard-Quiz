@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".StartScreen">
+
+
+    <TextView
+        android:id="@+id/wellDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150sp"
+        android:text="Bravo!"
+        android:textColor="@color/colorPrimary"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/trueCounter_fs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wellDone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25sp"
+        android:text="Doğru: 0"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/falseCounter_fs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trueCounter_fs"
+        android:layout_centerHorizontal="true"
+        android:text="Yanlış: 0"
+        android:textColor="@color/colorPrimary" />
+
+
+    <Button
+        android:id="@+id/retryButton"
+        android:layout_width="190sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wellDone"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Tekrar Dene"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/colorBackground" />
+
+    <Button
+        android:id="@+id/quitButton_fs"
+        android:layout_width="190sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/retryButton"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:text="Çıkış"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/colorBackground" />
+
+</RelativeLayout>
